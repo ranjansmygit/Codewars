@@ -6,14 +6,19 @@ class Complex(object):
         self.imaginary = imaginary
         
     def __add__(self, no):
+        return(self.real + no.real, self.imaginary + no.imaginary)
         
     def __sub__(self, no):
+        return(self.real - no.real, self.imaginary - no.imaginary)
         
     def __mul__(self, no):
+        return(self.real * no. real, self.imaginary * no.imaginary)
 
     def __truediv__(self, no):
+        return(self.real / no.real, self.imaginary / no.imaginary)
 
     def mod(self):
+        return abs(self)
 
     def __str__(self):
         if self.imaginary == 0:
